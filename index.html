@@ -21,7 +21,7 @@
     .window {
       background: #fff;
       border: 2px solid #000;
-      width: 700px;
+      width: 900px;
       margin: 0 auto;
       box-shadow: 8px 8px 0px #000;
     }
@@ -70,28 +70,53 @@
     }
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
-    .project-card {
-      position: relative;
-      height: 200px;
-      background-size: cover;
-      background-position: center;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
+    .project-window {
       border: 2px solid black;
-      box-shadow: 5px 5px 0 #000;
-      text-shadow: 1px 1px #000;
+      background: white;
+      box-shadow: 4px 4px 0 black;
+      display: flex;
+      flex-direction: column;
     }
-    .parallax-1 { background-image: url('https://picsum.photos/id/1015/400/300'); }
-    .parallax-2 { background-image: url('https://picsum.photos/id/1025/400/300'); }
-    .parallax-3 { background-image: url('https://picsum.photos/id/1035/400/300'); }
-    .parallax-4 { background-image: url('https://picsum.photos/id/1045/400/300'); }
+    .project-header {
+      background: #c0c0c0;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-bottom: 1px solid #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .project-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+      border-bottom: 1px solid #000;
+    }
+    .project-body {
+      padding: 10px;
+    }
+    .project-body h3 {
+      margin: 0;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    .project-body p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .project-body a {
+      display: inline-block;
+      padding: 4px 8px;
+      border: 1px solid black;
+      text-decoration: none;
+      color: black;
+      background: #e0e0e0;
+    }
     footer {
       text-align: center;
       font-size: 12px;
@@ -123,20 +148,55 @@
         <p>I'm passionate about reviving classic UI design like the original Macintosh. This portfolio is built to reflect that spirit—reborn with HTML5 & CSS3.</p>
 
         <h2 id="projects">Projects</h2>
-        <div class="project-box">
-          <strong>Mac OS Tribute Page</strong>
-          <p>A fully functional retro Mac UI tribute with CSS-only styling.</p>
-        </div>
-        <div class="project-box">
-          <strong>Typewriter Blog</strong>
-          <p>A blog styled with a vintage typewriter aesthetic.</p>
-        </div>
-
         <div class="project-grid">
-          <div class="project-card parallax-1">Parallax Project 1</div>
-          <div class="project-card parallax-2">Parallax Project 2</div>
-          <div class="project-card parallax-3">Parallax Project 3</div>
-          <div class="project-card parallax-4">Parallax Project 4</div>
+          <div class="project-window">
+            <div class="project-header">
+              <span>2024-06-01-project.html</span>
+              <span>◻ ◼ ◹</span>
+            </div>
+            <img src="https://picsum.photos/id/1015/400/200" alt="Project 1" class="project-image">
+            <div class="project-body">
+              <h3>Retro Landing Page</h3>
+              <p>A pixel-perfect landing page with vintage Apple aesthetics.</p>
+              <a href="#">View project</a>
+            </div>
+          </div>
+          <div class="project-window">
+            <div class="project-header">
+              <span>2024-06-02-project.html</span>
+              <span>◻ ◼ ◹</span>
+            </div>
+            <img src="https://picsum.photos/id/1025/400/200" alt="Project 2" class="project-image">
+            <div class="project-body">
+              <h3>Black & White Gallery</h3>
+              <p>A minimalist photo gallery in grayscale with System 6 vibes.</p>
+              <a href="#">View project</a>
+            </div>
+          </div>
+          <div class="project-window">
+            <div class="project-header">
+              <span>2024-06-03-project.html</span>
+              <span>◻ ◼ ◹</span>
+            </div>
+            <img src="https://picsum.photos/id/1035/400/200" alt="Project 3" class="project-image">
+            <div class="project-body">
+              <h3>Terminal Blog</h3>
+              <p>A developer blog with a retro terminal layout and animations.</p>
+              <a href="#">View project</a>
+            </div>
+          </div>
+          <div class="project-window">
+            <div class="project-header">
+              <span>2024-06-04-project.html</span>
+              <span>◻ ◼ ◹</span>
+            </div>
+            <img src="https://picsum.photos/id/1045/400/200" alt="Project 4" class="project-image">
+            <div class="project-body">
+              <h3>Mac Notes App</h3>
+              <p>A note-taking interface styled after the original Macintosh experience.</p>
+              <a href="#">View project</a>
+            </div>
+          </div>
         </div>
 
         <h2 id="contact">Contact</h2>
