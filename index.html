@@ -68,6 +68,30 @@
       background: #f7f7f7;
       margin-bottom: 10px;
     }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .project-card {
+      position: relative;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      border: 2px solid black;
+      box-shadow: 5px 5px 0 #000;
+      text-shadow: 1px 1px #000;
+    }
+    .parallax-1 { background-image: url('https://picsum.photos/id/1015/400/300'); }
+    .parallax-2 { background-image: url('https://picsum.photos/id/1025/400/300'); }
+    .parallax-3 { background-image: url('https://picsum.photos/id/1035/400/300'); }
+    .parallax-4 { background-image: url('https://picsum.photos/id/1045/400/300'); }
     footer {
       text-align: center;
       font-size: 12px;
@@ -106,6 +130,13 @@
         <div class="project-box">
           <strong>Typewriter Blog</strong>
           <p>A blog styled with a vintage typewriter aesthetic.</p>
+        </div>
+
+        <div class="project-grid">
+          <div class="project-card parallax-1">Parallax Project 1</div>
+          <div class="project-card parallax-2">Parallax Project 2</div>
+          <div class="project-card parallax-3">Parallax Project 3</div>
+          <div class="project-card parallax-4">Parallax Project 4</div>
         </div>
 
         <h2 id="contact">Contact</h2>
